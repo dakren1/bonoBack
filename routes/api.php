@@ -323,6 +323,7 @@ Route::post('/clientes',function(Request $request){
         $retorno = ["id" => $tabla[0]->id];
 
     }
+    ///
     else{
         DB::table('clientes')->insertGetId([
             "nombre"=>$nombre
